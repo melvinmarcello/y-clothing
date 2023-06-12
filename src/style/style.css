@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+*{
+    -ms-overflow-style: none;
+    scrollbar-width: none;  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-track-color: none;
+    font-family: 'Viga', sans-serif;
+}
+
+/* Nav */
+.navbar{
+    background-color: #e1d4cb;
+    font-size: 18px;
+}
+.brand{
+    font-weight: 500;
+    letter-spacing: 6px;
+}
+.nav-link{
+    text-decoration: none;
+}
+.nav-link:hover{
+    color: aliceblue;
+    border-bottom: 1px solid brown;
+}
+
+.actives{
+    color: aliceblue;
+    border-bottom: 2px solid brown;
+}
+.dropdown .dropdown-item a{
+    color: black;
+    text-decoration: none;
+    border-bottom: none !important;
+}
+/* End Nav */
+
+/* BestSeller */
+.bestSeller > h3, h1{
+    text-align: center;
+}
+.bestSeller > h3{
+    margin-top: 50px;
+    margin-left: -230px;
+}
+.bestSeller > h1 > span{
+    color: #bb814f;
+}
+.card{
+    margin-bottom: 20px;
+}
+.card-img-top{
+    height: 500px;
+    aspect-ratio: 1/2;
+    object-fit: cover;
+}
+/* End BestSeller */
+
+/* Top Model */
+.topModel{
+    width: 100%;
+    background-color: #fff6ea;
+}
+.topModelTagline-top{
+    color: #cba491;
+    font-size: 28px;
+}
+.topModelTagline-right  h3{
+    text-align: center;
+    font-size: 60px;
+    margin-left: 0;
+}
+.imgModel{
+    width: 300px;
+    aspect-ratio: 3/4;
+    aspect-ratio: cover;
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .mainImage {
+        width: 300px;
+        aspect-ratio: 2/3;
+        object-fit: cover;
+    }
+    .imgModel{
+        width: 200px;
+        height: 200px;
+        aspect-ratio: cover;
+        display: flex;
+    }
+  } 
+/* End Top Model */
+
+
+
+/* About Us */
+.aboutUs-image{
+    height: 500px;
+    aspect-ratio: 1/2;
+    object-fit: cover;
+}
+
+.aboutUs-tag{
+    width: 400px;
+    border-bottom: 2px solid black;
+    font-size: 48px;
+    color: #8a663f;
+}
+.aboutUs-overview{
+    text-align: justify;
+}
+/* End About Us */
+
+
+/* Details */
+.image-wrapper{
+    margin-top: 20px;
+}
+.image-wrapper img{
+    height: 300px;
+    width: 100%;
+    object-fit: contain;
+    
+
+}
+
+/* End Details */
+
+
+
+
+/* Footer */
+footer{
+    background-color: #e1d4cb;
+}
+
+.copyright-wrapper{
+    background-color:rgba(0, 0, 0, 0.2);
+}
+/* End Footer */
+
+
+@media (max-width: 990px){
+    .bestSeller > h1{
+        margin-left: -65px;
+    }
+    .aboutUs-image{
+        display: none;
+    }
+
+}

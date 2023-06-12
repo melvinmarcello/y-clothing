@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+.mainImage{
+    height: 600px;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+}
+.tagline-1{
+    font-size: 70px;
+    text-align: start;
+
+}
+.tagline-2{
+    font-size: 90px;
+    color: brown;
+    font-family: 'Ms Madi', cursive;
+
+}
+
+/* Main */
+.wrapper{
+    height: 100vh;
+    width: 100%;
+    background-color: #e1d4cb;
+}
+.mainImage{
+    text-align: center;
+    margin-top: 20px;
+    border: 3px solid whitesmoke;
+}
+
+
+.getStart{
+    font-family: 'Viga', sans-serif;
+    background-color: #dca735;
+    border: 1px solid whitesmoke;
+    box-shadow: 2px 2px gray;
+    width: 200px;
+    border-radius: 30px;
+}
+/* End Main */
+
+@media (max-width: 990px) {
+    .mainImage {
+        height: 500px;
+        aspect-ratio: 2/3;
+        object-fit: cover;
+    }
+    .tagline-2{
+        font-size: 50px;
+        color: brown;
+        font-family: 'Ms Madi', cursive;
+    
+    }
+  }

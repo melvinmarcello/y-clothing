@@ -1,0 +1,31 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.detailSection{
+    height: 100vh;
+}
+
+.mainImage{
+    padding: 20px;
+    border: none;
+    max-width: 100%;
+    max-height: 90vh;
+    margin: auto;
+}
+.addButton, .minButton{
+    font-size: 22px;
+}
+
+.quantity{
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px; 
+}
+
+.utils, .form-select{
+    color: #dca735;
+}

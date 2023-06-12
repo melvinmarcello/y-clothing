@@ -1,0 +1,35 @@
+.topModel{
+    width: 100%;
+    background-color: #fff6ea;
+}
+.topModelTagline-top{
+    color: #cba491;
+    font-size: 28px;
+}
+.topModelTagline-right  h3{
+    text-align: center;
+    font-size: 60px;
+    margin-left: 0;
+}
+.imgModel{
+    width: 300px;
+    aspect-ratio: 3/4;
+    aspect-ratio: cover;
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .mainImage {
+        width: 300px;
+        aspect-ratio: 2/3;
+        object-fit: cover;
+    }
+    .image-container{
+        flex-wrap: wrap;
+    }
+    .imgModel{
+        width: 200px;
+        height: 200px;
+        aspect-ratio: cover;
+    }
+  }

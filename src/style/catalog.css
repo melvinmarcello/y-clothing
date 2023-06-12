@@ -1,0 +1,43 @@
+/* Catalog */
+h3, h1{
+    text-align: center;
+}
+
+h3{
+    margin-left: -420px;
+}
+span{
+    color: #bb814f;
+}
+
+.card{
+    padding: 16px;
+    text-align: center;
+    text-align: justify;
+}
+.card-title{
+    height: 60px;
+}
+.card-text{
+    overflow:hidden;
+}
+.productName{
+    color: black;
+    text-decoration: none;
+}
+.productName:hover{
+    color: #bb814f;
+}
+.detail{
+    position:absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+.button-pagination{
+    margin: 10px    5px ;
+    padding: 5px 10px;
+    background-color: whitesmoke;
+}
+
+/* End Catalog */
+
