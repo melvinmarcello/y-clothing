@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useEffect } from 'react';
 import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import { UserContext } from '../context/userContext';
@@ -7,7 +7,6 @@ import { logoutUser } from '../api';
 
 const Navigationbar = () => {
   const {user} = useContext(UserContext)
-  const [message, setMessage] = useState('')
   
   
   useEffect(()=>{
@@ -16,7 +15,6 @@ const Navigationbar = () => {
 
   const handleLogout = () =>{
     logoutUser().then(({data}) => {
-      setMessage(data.message)
       window.location.reload(false);
     })
 
