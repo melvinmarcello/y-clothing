@@ -1,13 +1,16 @@
 /* Catalog */
-h3, h1{
-    text-align: center;
-}
-
-h3{
-    margin-left: -420px;
+.title-wrapper {
+    width: 50%;
+    margin: auto;
+    text-align: start;
 }
 span{
     color: #bb814f;
+}
+
+.catalog-image{
+    height: 300px;
+    object-fit: contain;
 }
 
 .card{
@@ -33,11 +36,31 @@ span{
     bottom: 0;
     margin-bottom: 10px;
 }
+
+.product-description{
+    height: 50px;
+}
 .button-pagination{
     margin: 10px    5px ;
     padding: 5px 10px;
     background-color: whitesmoke;
 }
 
+@media screen and (max-width:992px) {
+    .title-wrapper{
+        width: 80%;
+    }
+    .title-wrapper h3{
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    .title-wrapper h1{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+}
+
+
 /* End Catalog */
+
 

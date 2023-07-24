@@ -1,10 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
-.mainImage{
+
+
+
+.hero-image-wrapper{
+    position: relative;
     height: 600px;
+}
+.hero-image{
+    height: 100%;
     aspect-ratio: 2/3;
     object-fit: cover;
+    margin: auto;
+    z-index: 2;
+    border: 5px solid white;
 }
+
+.hero-image-wrapper::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: -5px;
+    right: 113px;
+    z-index:1;
+    border-top: 5px solid brown;
+    border-right: 5px solid brown;
+    
+}
+.hero-image-wrapper::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 113px;
+    bottom: -5px;
+    border-left: 5px solid brown;
+    border-bottom: 5px solid brown;
+    
+}
+
+
 .tagline-1{
     font-size: 70px;
     text-align: start;
@@ -17,26 +55,26 @@
 
 }
 
-/* Main */
 .wrapper{
     height: 100vh;
     width: 100%;
     background-color: #e1d4cb;
 }
-.mainImage{
-    text-align: center;
-    margin-top: 20px;
-    border: 3px solid whitesmoke;
-}
-
 
 .getStart{
     font-family: 'Viga', sans-serif;
     background-color: #dca735;
     border: 1px solid whitesmoke;
-    box-shadow: 2px 2px gray;
+    box-shadow: 3px 3px 5px rgba(0,0,0,.5);
     width: 200px;
     border-radius: 30px;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+.getStart:hover{
+    color: brown;
+    
 }
 /* End Main */
 

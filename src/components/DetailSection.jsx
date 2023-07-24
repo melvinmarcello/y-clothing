@@ -65,7 +65,7 @@ const DetailSection = ({product}) =>{
 
                     <hr />
 
-                    <div className="row mb-4 utils">
+                    <div className="row utils">
                         <div className="col-md-4 col-6">
                         <label className="mb-2">Size</label>
                         <select className="form-select border border-secondary">
@@ -75,7 +75,7 @@ const DetailSection = ({product}) =>{
                         </select>
                         </div>
 
-                        <div className="col-md-4 col-6 mb-3">
+                        <div className="col-md-4 col-6">
                         <label className="mb-2 d-block">Quantity</label>
                         <div className="input-group mb-3">
                             <button className="btn btn-white border border-secondary px-3" type="button" id="button-addon1" data-mdb-ripple-color="dark">
@@ -90,7 +90,7 @@ const DetailSection = ({product}) =>{
                         </div>
                         </div>
                     </div>
-                    <a href="/" className="btn btn-primary shadow-0 me-3"> <i className="me-1 fa fa-shopping-basket"></i> Add to cart </a>                    
+                    <a href="/" className="btn btn-primary shadow-0 me-3 mt-1"> <i className="me-1 fa fa-shopping-basket"></i> Add to cart </a>                    
                     </div>
                 </main>
                 </div>

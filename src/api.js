@@ -7,6 +7,17 @@ export const getProductList = async () =>{
     return products
 }
 
+export const getBestSeller = async () =>{
+  const data = []
+  let product = await await fetch(`https://fakestoreapi.com/products/`)
+  .then(res=>res.json())
+
+  for (let index = 0; index < 3 ; index++) {
+      data.push(product[index])
+    }
+    return data
+}
+
 export const getProductListByid = async (dataId) =>{
     const product = await fetch(`https://fakestoreapi.com/products/${dataId}`)
     .then(res=> res.json()

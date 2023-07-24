@@ -4,17 +4,13 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-
-.detailSection{
-    height: 100vh;
-}
-
 .mainImage{
     padding: 20px;
     border: none;
-    max-width: 100%;
-    max-height: 90vh;
+    width: 500px;
+    height: 600px;
     margin: auto;
+    object-fit: contain;
 }
 .addButton, .minButton{
     font-size: 22px;

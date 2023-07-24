@@ -1,6 +1,5 @@
 import React from "react";
 import * as icons from 'react-bootstrap-icons';
-// import logo from "../assets/logo-kabupaten.png"
 const Footer = () =>{
     return (
         <>
@@ -14,7 +13,7 @@ const Footer = () =>{
                                 className="mb-4 mt-0 d-inline-block mx-auto"
                                 style={{width: "60px", backgroundClip: "#7c4dff", height: "2px"}}
                                 />
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit error provident quo mollitia sed ea ratione ipsa dolore deserunt nisi id deleniti doloremque odit pariatur, repudiandae nobis eveniet voluptatem dolorum sapiente amet magni enim fuga.</p>
+                            <p>Introducing Y-CLOTHING, where style meets comfort in perfect harmony. We are a trendy and contemporary clothing brand that caters to fashion-forward individuals seeking quality apparel that effortlessly complements their lifestyle.</p>
                         </div>
 
                         <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -27,13 +26,13 @@ const Footer = () =>{
                             <a href="#!" className="text-dark">Home</a>
                             </p>
                             <p>
-                                <a href="#!" className="text-dark">Pricing</a>
-                            </p>
-                            <p>
-                                <a href="#!" className="text-dark">More Details</a>
-                            </p>
-                            <p>
                                 <a href="#!" className="text-dark">Catalog</a>
+                            </p>
+                            <p>
+                                <a href="#!" className="text-dark">Cart</a>
+                            </p>
+                            <p>
+                                <a href="#!" className="text-dark">Login</a>
                             </p>
                         </div>
 

@@ -33,7 +33,7 @@ body::-webkit-scrollbar {
 }
 
 .actives{
-    color: aliceblue;
+    color: brown;
     border-bottom: 2px solid brown;
 }
 .dropdown .dropdown-item a{
@@ -44,81 +44,32 @@ body::-webkit-scrollbar {
 /* End Nav */
 
 /* BestSeller */
-.bestSeller > h3, h1{
-    text-align: center;
+
+.title-wrapper{
+    width: 50%;
 }
-.bestSeller > h3{
-    margin-top: 50px;
-    margin-left: -230px;
-}
-.bestSeller > h1 > span{
-    color: #bb814f;
-}
-.card{
+
+.bestSeller-card{
     margin-bottom: 20px;
+    height: auto;
 }
 .card-img-top{
-    height: 500px;
+    height: 200px;
     aspect-ratio: 1/2;
-    object-fit: cover;
+    object-fit: contain;
+}
+
+.bestSeller-description{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    text-align: justify;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-weight: 300;
+    color: #ababab;
 }
 /* End BestSeller */
 
-/* Top Model */
-.topModel{
-    width: 100%;
-    background-color: #fff6ea;
-}
-.topModelTagline-top{
-    color: #cba491;
-    font-size: 28px;
-}
-.topModelTagline-right  h3{
-    text-align: center;
-    font-size: 60px;
-    margin-left: 0;
-}
-.imgModel{
-    width: 300px;
-    aspect-ratio: 3/4;
-    aspect-ratio: cover;
-    display: block;
-}
-
-@media screen and (max-width: 600px) {
-    .mainImage {
-        width: 300px;
-        aspect-ratio: 2/3;
-        object-fit: cover;
-    }
-    .imgModel{
-        width: 200px;
-        height: 200px;
-        aspect-ratio: cover;
-        display: flex;
-    }
-  } 
-/* End Top Model */
-
-
-
-/* About Us */
-.aboutUs-image{
-    height: 500px;
-    aspect-ratio: 1/2;
-    object-fit: cover;
-}
-
-.aboutUs-tag{
-    width: 400px;
-    border-bottom: 2px solid black;
-    font-size: 48px;
-    color: #8a663f;
-}
-.aboutUs-overview{
-    text-align: justify;
-}
-/* End About Us */
 
 
 /* Details */

@@ -1,53 +1,39 @@
-import { Card, Button, Col, Row, Container } from "react-bootstrap";
+import { Card, Col, Row, Container } from "react-bootstrap";
 import '../style/style.css'
-import img1 from '../assets/1.jpg'
-import img2 from '../assets/2.jpg'
-import img3 from '../assets/3.jpg'
+import { useEffect, useState } from "react";
+import { getBestSeller } from "../api";
+import { Link } from "react-router-dom";
 const BestSeller = () => {
+    const [bestSeller, setBestSeller] = useState()
+
+    useEffect(() =>{
+        getBestSeller().then(res => setBestSeller(res))
+    }, [])
+
+
     return(
-        <Container className="bestSeller">
-            <h3>BEST SELLER</h3>
-            <h1>FIND THE <span> BEST PICKS </span></h1>
-            <Row>
-                <Col md="6" xl="4"> 
-                    <Card>
-                        <Card.Img variant="top" src={img1} className="imgCard" />
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
-                            </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col md="6" xl="4">
-                    <Card>
-                        <Card.Img variant="top" src={img2} />
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
-                            </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col md="6" xl="4">
-                    <Card>
-                        <Card.Img variant="top" src={img3} />
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
-                            </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
+        <Container className="bestSeller py-5">
+            <div className="title-wrapper pb-2">
+                <h3>BEST SELLER</h3>
+                <h1>FIND THE <span> BEST PICKS </span></h1>
+            </div>
+            <Row className="mt-5">
+                {bestSeller?.map((data, key) => (
+                    <Col md="6" xl="4" key={key}>
+                        <Card className="bestSeller-card">
+                             <Link className='productName' to={`/catalog/${data.id}`}>
+                                <Card.Img variant="top" src={data.image} className="imgCard" />
+                                <Card.Body>
+                                    <Card.Title className="mb-0">{data.title}</Card.Title>
+                                    <Card.Text className="bestSeller-description">
+                                    {data.description}
+                                    </Card.Text>                            
+                                </Card.Body>
+                             </Link>
+                        </Card>
+                    </Col>
+
+                ))}                
             </Row>
         </Container>
         
